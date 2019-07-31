@@ -69,7 +69,7 @@ const _useHassAuth = (hassUrl?: string): HassAuth => {
                             'Unable to connect to the provided Home Assistant host'
                         );
                     case ERR_INVALID_AUTH:
-                        console.error('The supplied authentication is invalid');
+                        console.error('The provided authentication is invalid');
                     case ERR_CONNECTION_LOST:
                         console.error(
                             'Connection to the Home Assistant host was lost'

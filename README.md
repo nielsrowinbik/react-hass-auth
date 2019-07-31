@@ -13,7 +13,7 @@ Library is written in TypeScript. File an issue if you find any problems.
 ## Install
 
 ```bash
-yarn add react-netlify-identity
+yarn add react-hass-auth
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 {
     "name": "react-hass-auth",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Use Home Assistant authentication with React",
     "author": "nielsrowinbik",
     "license": "MIT",
@@ -16,7 +16,9 @@
     },
     "scripts": {
         "start": "tsdx watch",
-        "build": "tsdx build"
+        "build": "tsdx build",
+        "version": "yarn run build && auto-changelog -p --template keepachangelog && git add .",
+        "prepublishOnly": "git push && git push --tags && gh-release"
     },
     "dependencies": {
         "home-assistant-js-websocket": "^4.3.1",
@@ -30,6 +32,8 @@
         "@svgr/rollup": "^4.3.2",
         "@types/react": "^16.8.24",
         "@types/react-dom": "^16.8.5",
+        "auto-changelog": "^1.14.1",
+        "gh-release": "^3.5.0",
         "prettier": "^1.18.2",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",

@@ -1,6 +1,6 @@
 {
     "name": "react-hass-auth",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Use Home Assistant authentication with React",
     "author": "nielsrowinbik",
     "license": "MIT",
